@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangulação de Delaunay</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        svg {
+            border: 1px solid #000;
+        }
+        .point {
+            fill: red;
+            stroke: black;
+            stroke-width: 2px;
+        }
+        .triangle {
+            fill: rgba(0, 255, 0, 0.5);
+            stroke: black;
+            stroke-width: 1px;
+        }
+    </style>
+</head>
+<body>
+    <svg id="svgCanvas" width="800" height="600"></svg>
+    <script src="https://cdn.jsdelivr.net/npm/d3-delaunay/dist/d3-delaunay.min.js"></script>
+    <script src="triangulation.js"></script>
+</body>
+</html>
